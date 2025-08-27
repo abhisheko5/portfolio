@@ -6,7 +6,7 @@ const Footer=()=>{
     <div className="flex flex-col mx-[50px] my-[170px] gap-[30px]">
       <div className="flex justify-between">
         <div className="text-[20px] max-w-[400px]">
-          <img src={footer_logo} alt=""/>
+          <h1 className="text-[40px] font-semibold bg-[linear-gradient(90deg,#ff0000,#0000ff)] bg-clip-text text-transparent">Abhishek</h1>
           <p className="text-[20px] max-w-[400px]">I am a full stack developer from, India with experience in personal projects in mern stack</p>
         </div>
         <div className="flex items-center gap-[35px]">

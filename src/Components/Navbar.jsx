@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between mx-4 md:mx-20 my-2 relative">
       {/* Logo */}
-      <img src={logo} alt="Logo" className="h-8 md:h-12 z-50" />
+    <h1 className="text-[40px] font-semibold bg-[linear-gradient(90deg,#ff0000,#0000ff)] bg-clip-text text-transparent">Abhishek</h1>
       
       {/* Mobile Menu Button */}
       <div className="md:hidden z-50">

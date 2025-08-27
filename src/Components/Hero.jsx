@@ -7,7 +7,8 @@ const Hero=()=>{
     <div id="home"className="flex flex-col items-center gap-[35px]">
       <img className="mt-[150px] w-100 rounded-full" src={profile_img} alt=""/>
       <h1 className="text-center w-[100%] text-[90px] font-semibold">
-      <span className=" text-blue-500 ">I'm Abhishek Lohar</span> , Backend developer based in india</h1>
+      <span className=" text-[80px] font-semibold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-500
+           shadow-xl bg-clip-text text-transparent">I'm Abhishek Lohar</span> , Backend developer based in india</h1>
       <p className="w-[50%] text-center font-md ">I am a recent graduate in btech cs had expericence with personal project in full stack</p>
       <div className="flex items-center gap-[25px] text-xl font-semibold mb-[50px]">
         <div className=" px-[15px] py-[15px] bg-[linear-gradient(90deg,#ff0000,#0000ff)] cursor-pointer rounded-full hover:border border-white"><AnchorLink className="" offset={50} href="#contact">Connect with me</AnchorLink></div>
