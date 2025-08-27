@@ -1,0 +1,27 @@
+import React from "react";
+import profile_img from '../assets/profile_img.jpeg'
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
+const Hero=()=>{
+  return(
+    <div id="home"className="flex flex-col items-center gap-[35px]">
+      <img className="mt-[150px] w-100 rounded-full" src={profile_img} alt=""/>
+      <h1 className="text-center w-[100%] text-[90px] font-semibold">
+      <span className=" text-blue-500 ">I'm Abhishek Lohar</span> , Backend developer based in india</h1>
+      <p className="w-[50%] text-center font-md ">I am a recent graduate in btech cs had expericence with personal project in full stack</p>
+      <div className="flex items-center gap-[25px] text-xl font-semibold mb-[50px]">
+        <div className=" px-[15px] py-[15px] bg-[linear-gradient(90deg,#ff0000,#0000ff)] cursor-pointer rounded-full hover:border border-white"><AnchorLink className="" offset={50} href="#contact">Connect with me</AnchorLink></div>
+       <a
+  href="https://drive.google.com/file/d/1hV7FgzQL64E4HKXSX3ZWIBguuoaiYhRi/view?usp=drive_link"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-[35px] py-[15px] rounded-full cursor-pointer border border-white hover:border-blue-500 inline-block"
+>
+  My Resume
+</a>
+      </div>
+
+    </div>
+  )
+}
+export default Hero;
