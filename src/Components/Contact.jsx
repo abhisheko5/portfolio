@@ -40,7 +40,7 @@ const Contact=()=>{
       </div>
       <div className=" flex gap-[150px]">
         <div className="flex flex-col gap-[30px] ">
-          <h1 className="text-[80px] font-semibold bg-[linear-gradient(90deg,#ff0000,#0000ff)] bg-clip-text text-transparent">Let's talk</h1>
+          <h1 className="text-[80px] min-w-[100px] font-semibold bg-[linear-gradient(90deg,#ff0000,#0000ff)] bg-clip-text text-transparent">Let's talk</h1>
           <p className="max-w-[550px] color-white text-[20px] leading-[25px]">I'm currently open to entry level jobs, so feel free to contact</p>
           <div className="flex flex-col gap-[30px] text-[22px]">
               <div className=" flex items-center gap-[20px]">
