@@ -11,15 +11,15 @@ const Navbar = () => {
 
   const handleMenuClick = (menuItem) => {
     setMenu(menuItem);
-    setMobileMenuOpen(false); // Close mobile menu when item is clicked
+    setMobileMenuOpen(false); 
   };
 
   return (
     <div className="flex items-center justify-between mx-4 md:mx-20 my-2 relative">
-      {/* Logo */}
+  
     <h1 className="text-[40px] font-semibold bg-[linear-gradient(90deg,#ff0000,#0000ff)] bg-clip-text text-transparent">Abhishek</h1>
       
-      {/* Mobile Menu Button */}
+
       <div className="md:hidden z-50">
         <img 
           src={mobileMenuOpen ? menu_close : menu_open} 
@@ -29,7 +29,6 @@ const Navbar = () => {
         />
       </div>
 
-      {/* Desktop Navigation */}
       <ul className="hidden md:flex items-center gap-12 text-lg list-none">
         <li className="flex flex-col gap-1 cursor-pointer">
           <AnchorLink className="hover:text-blue-600 transition-colors" offset={50} href="#home">
@@ -57,14 +56,13 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Desktop CTA Button */}
+
       <div className="hidden md:flex w-48 h-12 items-center justify-center rounded-full cursor-pointer bg-gradient-to-r from-red-500 to-blue-500 text-white text-lg font-bold transition-transform duration-300 transform hover:scale-110">
         <AnchorLink className="text-white" offset={50} href="#contact">
           <span onClick={() => setMenu("contact")}>Connect with me</span>
         </AnchorLink>
       </div>
 
-      {/* Mobile Navigation Menu */}
       <div className={`md:hidden fixed top-0 right-0 h-full w-72 bg-black shadow-lg transform transition-transform duration-300 z-40 ${
         mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
@@ -95,8 +93,7 @@ const Navbar = () => {
               {menu === "contact" ? <img className="mx-auto w-16" src={underline} alt="" /> : null}
             </li>
           </ul>
-          
-          {/* Mobile CTA Button */}
+        
           <div className="w-full h-12 flex items-center justify-center rounded-full cursor-pointer bg-gradient-to-r from-red-500 to-blue-500 text-white text-lg font-bold mt-8 transition-transform duration-300 transform hover:scale-105">
             <AnchorLink className="text-white" offset={50} href="#contact">
               <span onClick={() => handleMenuClick("contact")}>Connect with me</span>
